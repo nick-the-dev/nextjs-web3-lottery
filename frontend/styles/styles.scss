@@ -82,8 +82,6 @@ header {
 }
 
 
-
-
 /* Hero Section */
 .hero {
   padding-top: 60px;
@@ -143,6 +141,93 @@ header {
   line-height: 1.4;
 }
 
+/* Info Section */
+.info-card {
+  width: 33.333333%;
+  padding: 0 15px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.cards-wrapper {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.info-card .inner {
+  padding: 16px;
+  border-radius: 24px;
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 570px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.info {
+  margin-bottom: 200px;
+}
+
+.info-card .inner::before {content: "";position: absolute;top: 0;right: 0;bottom: 0;left: 0;z-index: -1;margin: -1px; /* !importanté */border-radius: 25px; /* !importanté */background: linear-gradient(to bottom, #7ba0ff, #5bcca9);box-shadow: 0 4px 9px 0 rgb(37 232 214 / 20%);transition: 0.6s;}
+
+.info-card .inner::after {content: "";position: absolute;top: 0;right: 0;bottom: 0;left: 0;z-index: -1; /* !importanté */border-radius: 25px; /* !importanté */transition: 0.6s;margin: -2px;background: linear-gradient(to right, #7ba0ff, #5bcca9);box-shadow: 0 4px 9px 0 rgb(37 232 214 / 30%);opacity: 0;}
+
+
+.info-card:hover .inner::after, .info-card:focus .inner::after {
+  opacity: 1;
+}
+
+.info-card:hover .inner::before, .info-card:focus .inner::before {
+  opacity: 0;
+}
+
+.card-title {
+  font-family: 'Dosis';
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+  margin: 0;
+  transition: 0.3s;
+  margin-top: auto;
+}
+
+.card-desc {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.72px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+
+
+.card-img-wrapper {
+  margin-top: auto;
+}
+
+.info-card:hover .card-desc, .info-card:focus .card-desc {
+  max-height: 300px;
+}
+
+.section-title {
+  font-size: 7rem;
+  line-height: 1.4;
+  letter-spacing: 0.7px;
+  font-family: 'Dosis';
+  font-weight: 500;
+  background: linear-gradient(90deg, #4543d6, #25e8d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
 
 /* Footer */
 footer.footer {
