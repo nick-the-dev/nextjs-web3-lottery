@@ -1132,6 +1132,19 @@ footer.footer {
     font-size: 2.5rem;
   }
 
+  .roadmap svg {
+    opacity: 0.2;
+    top: 108px;
+  }
+
+  .stage .desc {
+      font-size: 1.5rem;
+  }
+
+  .stage .title {
+      font-weight: 600;
+  }
+
   @supports (-webkit-touch-callout: none) {
     .hero .title {
       color: #4543d6;
