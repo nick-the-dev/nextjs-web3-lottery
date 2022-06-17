@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const TheTeam: FC = () => {
   return (
-    <section className="the-team">
+    <section className="the-team" id="the-team">
       <h2 className="section-title">The Team</h2>
       <div className="cards-wrapper">
         <Card>

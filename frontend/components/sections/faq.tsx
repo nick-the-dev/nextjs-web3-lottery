@@ -9,7 +9,7 @@ function openFaqItem(e: any) {
 const Faq: FC = () => {
   
   return (
-    <section className="faq">
+    <section className="faq" id="faq">
       <h2 className="section-title">FAQ</h2>
       <div className="faq-rows">
         <div className="faq-item" onClick={openFaqItem}>

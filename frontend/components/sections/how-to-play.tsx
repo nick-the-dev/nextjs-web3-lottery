@@ -3,7 +3,7 @@ import Card from "../card"
 
 const HowToPlay: FC = () => {
   return (
-    <section className="how-to-play">
+    <section className="how-to-play" id="how-to-play">
       <h2 className="section-title">How to play</h2>
       <div className="cards-wrapper">
         <Card>

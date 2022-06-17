@@ -2,7 +2,7 @@ import { FC } from "react"
 
 const Roadmap: FC = () => {
   return (
-    <section className="roadmap">
+    <section className="roadmap" id="roadmap">
       <h2 className="section-title">Roadmap</h2>
       <div className="stages-wrapper">
         <div className="stage-row stage-row--1">

@@ -3,7 +3,7 @@ import { FC } from "react"
 
 const BuyATicket: FC = () => {
   return (
-    <section className="buy-a-ticket">
+    <section className="buy-a-ticket" id="buy-a-ticket">
       <div className="left">
         <h2 className="section-title">Buy a ticket</h2>
         <h3 className="subtitle">WE PRESENT OUR FIRST COLLECTION OF 100 RARE NFT TICKETS</h3>

@@ -8,7 +8,7 @@ import infoIcon from "../../public/assets/icon-info.png"
 
 const Info: FC = () => {
   return (
-    <section className="info">
+    <section className="info" id="info">
       <h2 className="section-title">Info</h2>
       <div className="cards-wrapper">
         <Card>

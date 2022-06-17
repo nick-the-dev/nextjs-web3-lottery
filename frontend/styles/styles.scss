@@ -62,7 +62,7 @@ header {
   transition: 0.3s;
 }
 
-.header-link:hover::before, .header-link:focus::before {
+.header-link:hover::before, .header-link:focus::before, .header-link.active::before {
   width: 100%;
 }
 
@@ -135,12 +135,101 @@ header {
 
 .buy-ticket-title {
   color: #1d1d1d;
-  font-size: 4rem;
-  font-family: 'Dosis';
+  font-size: 3rem;
+  font-family: "Dosis";
   font-weight: 500;
   letter-spacing: 1.2px;
   line-height: 1.4;
+  margin: 0 0 18px;
+  text-shadow: 0px 2px 4px rgb(0 0 0 / 30%);
 }
+
+.mint-box {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #1d1d1d;
+  border-radius: 24px;
+  height: 60px;
+  width: 212px;
+  justify-content: center;
+  margin-right: 25px;
+  padding: 10px 25px;
+}
+
+.cost {
+  font-family: 'Dosis';
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #1d1d1d;
+  text-shadow: 0px 2px 4px rgb(0 0 0 / 40%);
+  min-width: 100px;
+  text-align: center;
+}
+
+.quantity button {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.quantity .current-value {
+  font-size: 3.4rem;
+  font-family: 'Dosis';
+  font-weight: 500;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.progress-bar-wrapper {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 32px;
+}
+
+.progress-bar-wrapper .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.1rem;
+  font-family: 'Dosis';
+  font-weight: 500;
+  letter-spacing: 0.21px;
+}
+
+.hero .title {
+  background: linear-gradient(90deg, #25e8d6, #4543d6, #25e8d6);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 10s ease-in-out infinite;
+  background-position: 100%;
+  margin: 0;
+  line-height: 1.3;
+  font-size: 7.6rem;
+  font-family: "Dosis";
+  display: table;
+  margin-bottom: 20px;
+}
+
+
 
 /* Info Section */
 .card {
@@ -594,3 +683,10 @@ footer.footer {
   color: #fff;
   font-size: 1.5rem;
 }
+
+@keyframes animated_text {
+  0% { background-position: 100%; }
+  50% { background-position: 200%; }
+  100% { background-position: 100%; }
+}
+
