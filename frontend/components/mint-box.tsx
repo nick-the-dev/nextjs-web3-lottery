@@ -1,12 +1,18 @@
-import { FC, ReactNode} from "react"
+import { FC, ReactNode } from "react"
 import MintButton from "./buttons/mint-button"
 import Quantity from "./quantity"
 
-const MintBox: FC = () => {
+interface MintBoxProps {
+  handleMint: any
+}
+
+const MintBox: FC<MintBoxProps> = (props: any) => {
   return (
     <div className="mint-box">
-      <Quantity />
-      <MintButton />
+      <>
+        <Quantity />
+        <MintButton {...props} />
+      </>
     </div>
   )
 }

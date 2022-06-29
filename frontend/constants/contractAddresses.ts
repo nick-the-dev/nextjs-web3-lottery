@@ -6,6 +6,9 @@ const contractAddresses: Readonly<{ [contractName: string]: { [chainId: number]:
   [contractConstants.Counter.contractName]: {
     31337: "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
   },
+  [contractConstants.LotteryNFT.contractName]: {
+    80001: "0x472408019971e8b17C2F47dD0530dfDc4Bfc3312",
+  },
   [contractConstants.MyToken.contractName]: {
     31337: "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
   },

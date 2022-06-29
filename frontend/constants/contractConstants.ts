@@ -8,6 +8,12 @@ const contractConstants: Readonly<{
     tokenSymbol: string
     totalSupply: BigNumber
   }
+  LotteryNFT: {
+    contractName: string
+    tokenName: string
+    tokenSymbol: string
+    totalSupply: BigNumber
+  }
   Counter: {
     contractName: string
   }
@@ -17,6 +23,12 @@ const contractConstants: Readonly<{
     contractName: "MyToken",
     tokenName: "MyToken",
     tokenSymbol: "MYTOK",
+  },
+  LotteryNFT: {
+    totalSupply: parseEther("5"),
+    contractName: "NFTLootteryTest",
+    tokenName: "NLT",
+    tokenSymbol: "NLT",
   },
   Counter: {
     contractName: "Counter",
