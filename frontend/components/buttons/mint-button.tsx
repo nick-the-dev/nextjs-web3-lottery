@@ -5,11 +5,13 @@ import { useWalletContext } from "../../context/wallet.context"
 const MintButton: FC = (props: any) => {
   const { disconnectWallet, connectWallet, wallet } = useWalletContext()
   const [isLoading, setIsLoading] = useState(false)
+  const quantity = props.quantity
+  const setQuantity = props.setQuantity
 
-  const mint = () => {
+  const mint = (quantity: any) => {
     setIsLoading(true)
     props
-      .handleMint()
+      .handleMint(quantity)
       .then((res: any) => {
         setIsLoading(false)
       })
@@ -21,7 +23,7 @@ const MintButton: FC = (props: any) => {
   return (
     <Button
       loading={isLoading}
-      onClick={() => (wallet ? mint() : connectWallet())}
+      onClick={() => (wallet ? mint(quantity) : connectWallet())}
       className="mint-button"
       styles={{
         root: {

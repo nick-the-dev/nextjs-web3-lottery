@@ -891,6 +891,7 @@ const Home: NextPage = () => {
   const [maxSupply, setMaxSupply] = useState(0)
   const [totalSupply, setTotalSupply] = useState(0)
   const [cost, setCost] = useState(0)
+  const [quantity, setQuantity] = useState(1)
 
   // wallet related effects
   useEffect(() => {
@@ -919,15 +920,13 @@ const Home: NextPage = () => {
     )
   }, [wallet])
 
-  const handleMint = async () => {
+  const handleMint = async (quantity: any) => {
     const { ethereum } = window
     const provider = new ethers.providers.Web3Provider(ethereum)
     const signer = provider.getSigner()
     const connectedContract = new ethers.Contract(contractAddress, contract_abi, signer)
 
     try {
-      let quantity: any = null
-      quantity = document!.querySelector(".current-value")!.innerText
       console.log(cost)
       const currentCost: any = ethers.utils.formatEther(cost)
       console.log(currentCost)

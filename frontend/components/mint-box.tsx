@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react"
+import { FC, useState } from "react"
 import MintButton from "./buttons/mint-button"
 import Quantity from "./quantity"
 
@@ -7,11 +7,13 @@ interface MintBoxProps {
 }
 
 const MintBox: FC<MintBoxProps> = (props: any) => {
+  const [quantity, setQuantity] = useState(1)
+
   return (
     <div className="mint-box">
       <>
-        <Quantity />
-        <MintButton {...props} />
+        <Quantity quantity={quantity} setQuantity={setQuantity} />
+        <MintButton quantity={quantity} setQuantity={setQuantity} {...props} />
       </>
     </div>
   )
