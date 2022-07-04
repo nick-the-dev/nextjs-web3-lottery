@@ -21,7 +21,7 @@ import { formatUnits, parseUnits } from "ethers/lib/utils"
 const Home: NextPage = () => {
   const { wallet } = useWalletContext()
 
-  const contractAddress = "0x7e2df047C8776e3d168E95E27c5757d4ea0E9a14"
+  const contractAddress = "0xd7edc6c0b9e555da7a6da78ba2ee9a14821ba80f"
   const contract_abi = [
     {
       inputs: [
@@ -895,9 +895,9 @@ const Home: NextPage = () => {
 
   // wallet related effects
   useEffect(() => {
-    const url = "https://speedy-nodes-nyc.moralis.io/2a78e47a86ce54da0ce3e98d/bsc/testnet"
+    const url = "https://speedy-nodes-nyc.moralis.io/2a78e47a86ce54da0ce3e98d/eth/rinkeby"
     const provider = new ethers.providers.JsonRpcProvider(
-      "https://speedy-nodes-nyc.moralis.io/2a78e47a86ce54da0ce3e98d/bsc/testnet"
+      "https://speedy-nodes-nyc.moralis.io/2a78e47a86ce54da0ce3e98d/eth/rinkeby"
     )
     const signer = provider.getSigner("0xF602B29A694D033FF4811FB8BF5A40F60180ECA5") //Fake address
     let contract = new ethers.Contract(contractAddress, contract_abi, signer)
