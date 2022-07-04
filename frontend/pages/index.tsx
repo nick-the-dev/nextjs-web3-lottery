@@ -21,7 +21,7 @@ import { formatUnits, parseUnits } from "ethers/lib/utils"
 const Home: NextPage = () => {
   const { wallet } = useWalletContext()
 
-  const contractAddress = "0x5d2986662420684c07f4e9ddf63cd1125f4e3689"
+  const contractAddress = "0xD7Edc6C0B9e555da7A6Da78BA2EE9A14821Ba80f"
   const contract_abi = [
     {
       inputs: [
@@ -895,8 +895,8 @@ const Home: NextPage = () => {
 
   // wallet related effects
   useEffect(() => {
-    const url = "https://polygon-mumbai.g.alchemy.com/v2/MmEQEpdCiIgnn09HWuwMbcwi2u_4lkTv"
-    const provider = new ethers.providers.AlchemyWebSocketProvider("maticmum", "MmEQEpdCiIgnn09HWuwMbcwi2u_4lkTv")
+    const url = "https://eth-rinkeby.alchemyapi.io/v2/BWP8TvvwGIYSCHi0mmDG3zzw-RDcrDJQ"
+    const provider = new ethers.providers.AlchemyWebSocketProvider("rinkeby", "BWP8TvvwGIYSCHi0mmDG3zzw-RDcrDJQ")
     const signer = provider.getSigner("0xF602B29A694D033FF4811FB8BF5A40F60180ECA5") //Fake address
     let contract = new ethers.Contract(contractAddress, contract_abi, signer)
 

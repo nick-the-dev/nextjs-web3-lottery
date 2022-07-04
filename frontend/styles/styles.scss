@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  font-family: 'Raleway', sans-serif!important;
-  font-size: inherit!important;
+  font-family: "Raleway", sans-serif !important;
+  font-size: inherit !important;
 }
 
 /* Header */
@@ -23,7 +23,10 @@ body {
   align-items: center;
 }
 
-.header-menu {display: flex;align-items: center;}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
 
 .social-link {
   margin: 0 15px;
@@ -31,7 +34,7 @@ body {
 
 .header-link {
   margin: 0 27px;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
   color: #1d1d1d;
   font-size: 1.8rem;
@@ -62,7 +65,9 @@ header {
   transition: 0.3s;
 }
 
-.header-link:hover::before, .header-link:focus::before, .header-link.active::before {
+.header-link:hover::before,
+.header-link:focus::before,
+.header-link.active::before {
   width: 100%;
 }
 
@@ -70,7 +75,8 @@ header {
   transition: 0.3s;
 }
 
-.social-link:hover path, .social-link:focus path {
+.social-link:hover path,
+.social-link:focus path {
   fill: #5273c8;
 }
 
@@ -81,7 +87,6 @@ header {
 .header-link:active {
   color: #5273c8;
 }
-
 
 /* Hero Section */
 .hero {
@@ -104,7 +109,7 @@ header {
   margin: 0;
   line-height: 1.3;
   font-size: 7.6rem;
-  font-family: 'Dosis';
+  font-family: "Dosis";
   background: linear-gradient(90deg, #4543d6, #25e8d6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -115,7 +120,7 @@ header {
 .hero .subtitle {
   color: #555555;
   font-size: 4rem;
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-weight: 500;
   max-width: 730px;
   line-height: 1.4;
@@ -168,7 +173,7 @@ header {
 }
 
 .cost {
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-size: 2.5rem;
   font-weight: 500;
   color: #1d1d1d;
@@ -191,7 +196,7 @@ header {
 
 .quantity .current-value {
   font-size: 3.4rem;
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-weight: 500;
   flex-grow: 1;
   text-align: center;
@@ -210,7 +215,7 @@ header {
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.1rem;
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-weight: 500;
   letter-spacing: 0.21px;
 }
@@ -267,21 +272,49 @@ header {
   margin-bottom: 200px;
 }
 
-.card .inner::before {content: "";position: absolute;top: 0;right: 0;bottom: 0;left: 0;z-index: -1;margin: -1px; /* !importanté */border-radius: 25px; /* !importanté */background: linear-gradient(to bottom, #7ba0ff, #5bcca9);box-shadow: 0 4px 9px 0 rgb(37 232 214 / 20%);transition: 0.6s;}
+.card .inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px; /* !importanté */
+  border-radius: 25px; /* !importanté */
+  background: linear-gradient(to bottom, #7ba0ff, #5bcca9);
+  box-shadow: 0 4px 9px 0 rgb(37 232 214 / 20%);
+  transition: 0.6s;
+}
 
-.card .inner::after {content: "";position: absolute;top: 0;right: 0;bottom: 0;left: 0;z-index: -1; /* !importanté */border-radius: 25px; /* !importanté */transition: 0.6s;margin: -2px;background: linear-gradient(to right, #7ba0ff, #5bcca9);box-shadow: 0 4px 9px 0 rgb(37 232 214 / 30%);opacity: 0;}
+.card .inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* !importanté */
+  border-radius: 25px; /* !importanté */
+  transition: 0.6s;
+  margin: -2px;
+  background: linear-gradient(to right, #7ba0ff, #5bcca9);
+  box-shadow: 0 4px 9px 0 rgb(37 232 214 / 30%);
+  opacity: 0;
+}
 
-
-.card:hover .inner::after, .card:focus .inner::after {
+.card:hover .inner::after,
+.card:focus .inner::after {
   opacity: 1;
 }
 
-.card:hover .inner::before, .card:focus .inner::before {
+.card:hover .inner::before,
+.card:focus .inner::before {
   opacity: 0;
 }
 
 .card-title {
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-weight: 500;
   font-size: 4rem;
   line-height: 1.4;
@@ -301,12 +334,12 @@ header {
   transition: 0.4s ease-in-out;
 }
 
-
 .card-img-wrapper {
   margin-top: auto;
 }
 
-.card:hover .card-desc, .card:focus .card-desc {
+.card:hover .card-desc,
+.card:focus .card-desc {
   max-height: 300px;
 }
 
@@ -314,7 +347,7 @@ header {
   font-size: 7rem;
   line-height: 1.4;
   letter-spacing: 0.7px;
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-weight: 500;
   background: linear-gradient(90deg, #4543d6, #25e8d6);
   -webkit-background-clip: text;
@@ -325,7 +358,7 @@ header {
 
 /* Buy a ticket Section */
 .buy-a-ticket .subtitle {
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-size: 4rem;
   line-height: 1.4;
   letter-spacing: 1.2px;
@@ -381,7 +414,7 @@ header {
 }
 
 .how-to-play .title {
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-size: 4rem;
   font-weight: 500;
   margin: 0 0 24px;
@@ -399,7 +432,7 @@ header {
 }
 
 .how-to-play .number {
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-size: 4rem;
   width: 70px;
   height: 70px;
@@ -444,7 +477,8 @@ header {
   background-image: linear-gradient(128deg, #4543d6 -10%, #25e8d6 105%);
 }
 
-.how-to-play .card:hover .number::after, .how-to-play .card:focus .number::after {
+.how-to-play .card:hover .number::after,
+.how-to-play .card:focus .number::after {
   opacity: 1;
 }
 
@@ -469,7 +503,7 @@ header {
 }
 
 .stage .title {
-  font-family: 'Dosis';
+  font-family: "Dosis";
   color: #1d1d1d;
   font-size: 4rem;
   margin: 0 0 32px;
@@ -520,7 +554,7 @@ header {
   line-height: 1.4;
   letter-spacing: 1.2px;
   font-weight: 500;
-  font-family: 'Dosis';
+  font-family: "Dosis";
   color: #1d1d1d;
 }
 
@@ -554,8 +588,9 @@ header {
   padding: 40px 40px 50px;
 }
 
-.whitelist h2, .whitelist h3 {
-  font-family: 'Dosis';
+.whitelist h2,
+.whitelist h3 {
+  font-family: "Dosis";
   font-size: 4rem;
   font-weight: 500;
   color: #fff;
@@ -579,73 +614,73 @@ header {
 
 /* Faq */
 .faq .card {
-    width: 100%;
-    max-width: 821px;
-    padding: 0;
-    margin-top: 17px;
+  width: 100%;
+  max-width: 821px;
+  padding: 0;
+  margin-top: 17px;
 }
 
 .faq .card .inner {
-    min-height: unset;
-    padding: 16px 32px;
+  min-height: unset;
+  padding: 16px 32px;
 }
 
 .faq-item {
-    display: flex;
-    margin-bottom: 17px;
+  display: flex;
+  margin-bottom: 17px;
 }
 
 .toggle {
-    width: 50px;
-    height: 50px;
-    background: none;
-    border: none;
-    position: relative;
-    padding: 0;
-    cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
 }
 
 .toggle-wrapper {
-    margin-right: 46px;
+  margin-right: 46px;
 }
 
 .faq .question {
-    font-family: 'Dosis';
-    font-size: 4rem;
-    line-height: 1.2;
-    letter-spacing: 1.2px;
-    color: #1d1d1d;
-    font-weight: 500;
-    cursor: pointer;
+  font-family: "Dosis";
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  color: #1d1d1d;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .faq .answer {
-    margin: 0;
-    font-size: 1.8rem;
-    color: #1d1d1d;
-    line-height: 1.5;
-    letter-spacing: 0.72px;
-    text-align: left;
+  margin: 0;
+  font-size: 1.8rem;
+  color: #1d1d1d;
+  line-height: 1.5;
+  letter-spacing: 0.72px;
+  text-align: left;
 }
 
 .card-wrapper {
-    transition: 0.4s;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 3px 15px;
+  transition: 0.4s;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 3px 15px;
 }
 
 .toggle::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 36px;
-    height: 2px;
-    background: #1d1d1d;
-    transform: translate(-50%, -50%);
-    transition: 0.3s;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 36px;
+  height: 2px;
+  background: #1d1d1d;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
 }
 
 .toggle::after {
@@ -662,11 +697,64 @@ header {
 }
 
 .faq-item.open .toggle::after {
-    transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .faq-item.open .card-wrapper {
   max-height: 200px;
+}
+
+a.btn.signup-btn {
+  border: 1px solid transparent;
+  background-color: #228be6;
+  background-image: #228be6;
+  color: #fff;
+  height: 36px;
+  padding: 0 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  width: auto;
+  border-radius: 4px;
+  font-weight: 600;
+  position: relative;
+  line-height: 1;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #5273c8;
+  border: 4px solid #fff;
+  height: 50px;
+  padding: 7px;
+  border-radius: 24px;
+  font-size: 20px;
+  width: 166px;
+  box-shadow: 0px 4px 9px 0px rgb(69 67 214 / 28%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+a.btn.signup-btn:hover,
+a.btn.signup-btn:focus {
+  background-color: #4543d6;
 }
 
 /* Footer */
@@ -690,9 +778,15 @@ footer.footer {
 }
 
 @keyframes animated_text {
-  0% { background-position: 100%; }
-  50% { background-position: 200%; }
-  100% { background-position: 100%; }
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -702,54 +796,54 @@ footer.footer {
   }
 
   .the-team .cards-wrapper {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .the-team .card .inner {
-      min-height: 352px;
+    min-height: 352px;
   }
 
   .the-team .img-wrapper {
-      max-width: 90px;
+    max-width: 90px;
   }
 
   .the-team .letters {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 
   .the-team .position {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .the-team {
-      padding-bottom: 120px;
+    padding-bottom: 120px;
   }
 }
 
 @media (max-width: 991px) {
   .mantine-Button-loading {
-      opacity: 0.6;
+    opacity: 0.6;
   }
 
   .header-link {
-      margin: 0 15px;
+    margin: 0 15px;
   }
 
   .header-menu ul {
-      padding: 0;
+    padding: 0;
   }
 
   header button.mantine-Button-root {
-      font-size: 1.6rem;
-      width: 120px;
+    font-size: 1.6rem;
+    width: 120px;
   }
 
   .social-link {
-      margin: 0 10px;
+    margin: 0 10px;
   }
 
   header {
-      padding: 15px 0;
+    padding: 15px 0;
   }
 
   .hero .subtitle {
@@ -758,42 +852,41 @@ footer.footer {
   }
 
   .progress-bar-wrapper {
-      max-width: 500px;
-      margin-bottom: 30px;
+    max-width: 500px;
+    margin-bottom: 30px;
   }
 
   .quantity {
-      height: 50px;
-      width: 170px;
-      padding: 10px 15px;
+    height: 50px;
+    width: 170px;
+    padding: 10px 15px;
   }
 
   .quantity svg {
-      width: 20px;
+    width: 20px;
   }
 
   .buy-ticket-wrapper button.mint-button.mantine-Button-root {
-      min-width: 180px;
-      height: 50px;
-      font-size: 2rem;
+    min-width: 180px;
+    height: 50px;
+    font-size: 2rem;
   }
 
-
   .cost {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .hero {
-      padding-top: 40px;
-      padding-bottom: 120px;
+    padding-top: 40px;
+    padding-bottom: 120px;
   }
 
   .hero .title {
-      font-size: 6rem;
+    font-size: 6rem;
   }
 
   .buy-ticket-title {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .card-desc {
@@ -803,15 +896,15 @@ footer.footer {
   }
 
   .card-img-wrapper {
-      max-width: 110px;
+    max-width: 110px;
   }
 
   .card-title {
-      font-size: 2.8rem;
+    font-size: 2.8rem;
   }
 
   .card .inner {
-      min-height: 415px;
+    min-height: 415px;
   }
 
   .section-title {
@@ -824,42 +917,44 @@ footer.footer {
   }
 
   .buy-a-ticket .subtitle {
-      font-size: 3rem;
-      margin: 0 0 20px;
+    font-size: 3rem;
+    margin: 0 0 20px;
   }
 
   .buy-a-ticket p.desc1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .buy-a-ticket .desc2 {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 
   .buy-a-ticket svg {
-      max-width: 202px;
+    max-width: 202px;
   }
 
   .buy-a-ticket {
-      padding-bottom: 120px;
+    padding-bottom: 120px;
   }
 
   .buy-a-ticket .left {
-      max-width: 500px;
+    max-width: 500px;
   }
 
   .how-to-play .section-title {
     margin-bottom: 60px;
   }
 
-  .how-to-play .card .inner {min-height: 277px;}
+  .how-to-play .card .inner {
+    min-height: 277px;
+  }
 
   .how-to-play .card {
-      max-width: 400px;
+    max-width: 400px;
   }
 
   .how-to-play {
-      padding-bottom: 37px;
+    padding-bottom: 37px;
   }
 
   .stage {
@@ -876,57 +971,61 @@ footer.footer {
   }
 
   .stage .title {
-      font-size: 2rem;
-      margin: 0 0 11px;
+    font-size: 2rem;
+    margin: 0 0 11px;
   }
 
   .stage .desc {
-      font-size: 1.6rem;
-      min-height: unset;
+    font-size: 1.6rem;
+    min-height: unset;
   }
 
-  .stage-row {min-height: 197px;display: flex;align-items: center;}
+  .stage-row {
+    min-height: 197px;
+    display: flex;
+    align-items: center;
+  }
 
   .roadmap {
-      padding-bottom: 120px;
+    padding-bottom: 120px;
   }
 
-  .whitelist h2, .whitelist h3 {
+  .whitelist h2,
+  .whitelist h3 {
     font-size: 3rem;
   }
 
   .whitelist h3 {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .whitelist-box {
-      padding: 30px 30px 40px;
+    padding: 30px 30px 40px;
   }
 
   .whitelist {
-      padding-bottom: 120px;
+    padding-bottom: 120px;
   }
-
 
   .toggle::before {
     width: 30px;
   }
 
   .toggle::after {
-      height: 30px;
+    height: 30px;
   }
 
   .toggle-wrapper {
-      margin-right: 23px;
+    margin-right: 23px;
   }
 
   .faq .question {
-      font-size: 3rem;
-      padding-top: 6px;
+    font-size: 3rem;
+    padding-top: 6px;
   }
 
   .faq .card {
-      max-width: 580px;
+    max-width: 580px;
   }
 
   footer.footer {
@@ -935,10 +1034,9 @@ footer.footer {
   }
 
   .footer-logo {
-      max-width: 80px;
-      margin-bottom: 20px;
+    max-width: 80px;
+    margin-bottom: 20px;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -946,71 +1044,75 @@ footer.footer {
     display: none;
   }
 
-  .social-link {margin: 0 4px;}
+  .social-link {
+    margin: 0 4px;
+  }
 
   .header-inner svg {
-      max-width: 50px;
+    max-width: 50px;
   }
 
   .hero .title {
-      font-size: 5rem;
+    font-size: 5rem;
   }
 
   .slogan {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   .hero .subtitle {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .hero {
-      flex-wrap: wrap;
-      padding-bottom: 70px;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
   }
 
   .hero .left {
-      width: 100%;
-      padding: 0;
+    width: 100%;
+    padding: 0;
   }
 
-  .hero .right {display: none;}
+  .hero .right {
+    display: none;
+  }
 
   .hero .right > span {
   }
 
   .progress-bar-wrapper .text {
-      width: 100%;
-      text-align: center;
-      font-size: 1.6rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
   }
 
   .buy-ticket-wrapper {
   }
 
   .mint-box {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .quantity-wrapper {
-      margin: 0 0 20px;
+    margin: 0 0 20px;
   }
 
   .card {
-      width: 100%;
-      margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 15px;
   }
 
   .cards-wrapper {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .card .inner {
-      min-height: 220px;
+    min-height: 220px;
   }
 
   .info {
-      margin-bottom: 70px;
+    margin-bottom: 70px;
   }
 
   .buy-a-ticket {
@@ -1019,38 +1121,38 @@ footer.footer {
   }
 
   .section-title {
-      font-size: 5rem;
-      margin-bottom: 20px;
+    font-size: 5rem;
+    margin-bottom: 20px;
   }
 
   .buy-a-ticket .right {
-      display: none;
+    display: none;
   }
 
   .how-to-play .title {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 
   .how-to-play .desc {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 
   .how-to-play .card .inner {
-      min-height: unset;
+    min-height: unset;
   }
 
   .how-to-play .number {
-      width: 50px;
-      height: 50px;
-      font-size: 2.5rem;
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
   }
 
   .how-to-play {
-      padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   .how-to-play .card:last-of-type {
-      margin-bottom: 70px;
+    margin-bottom: 70px;
   }
 
   .roadmap {
@@ -1062,7 +1164,7 @@ footer.footer {
   }
 
   .buy-ticket-wrapper button.mint-button.mantine-Button-root {
-      min-width: 170px;
+    min-width: 170px;
   }
 
   .the-team .card {
@@ -1070,28 +1172,29 @@ footer.footer {
   }
 
   .the-team .desc {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 
   .the-team .card .inner {
-      min-height: unset;
+    min-height: unset;
   }
 
   .the-team {
-      padding-bottom: 70px;
+    padding-bottom: 70px;
   }
 
-  .whitelist h2, .whitelist h3 {
+  .whitelist h2,
+  .whitelist h3 {
     font-size: 2.5rem;
   }
 
   .whitelist .mantine-Button-root {
-      font-size: 1.8rem;
-      width: 140px;
+    font-size: 1.8rem;
+    width: 140px;
   }
 
   .whitelist {
-      padding-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   .faq-item.open .card-wrapper {
@@ -1099,33 +1202,32 @@ footer.footer {
   }
 
   .toggle {
-      width: 40px;
-      height: 40px;
+    width: 40px;
+    height: 40px;
   }
 
-
   .toggle::before {
-      width: 24px;
+    width: 24px;
   }
 
   .toggle::after {
-      height: 24px;
+    height: 24px;
   }
 
   .faq .question {
-      font-size: 2.2rem;
+    font-size: 2.2rem;
   }
 
   .faq .answer {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .faq .card .inner {
-      padding: 15px 20px;
+    padding: 15px 20px;
   }
 
   footer.footer {
-      margin-top: 70px;
+    margin-top: 70px;
   }
 
   .quantity .current-value {
@@ -1138,11 +1240,11 @@ footer.footer {
   }
 
   .stage .desc {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .stage .title {
-      font-weight: 600;
+    font-weight: 600;
   }
 
   @supports (-webkit-touch-callout: none) {
@@ -1153,5 +1255,4 @@ footer.footer {
       -webkit-text-fill-color: unset;
     }
   }
-
 }

@@ -16,7 +16,7 @@ contract Lottery is ERC721Enumerable, Ownable, VRFConsumerBaseV2 {
 
   // Rinkeby coordinator. For other networks,
   // see https://docs.chain.link/docs/vrf-contracts/#configurations
-  address vrfCoordinator = 0x7a1BaC17Ccc5b313516C5E16fb24f7659aA5ebed; // Change to Polygon when it's time
+  address vrfCoordinator = 0x6168499c0cFfCaCD319c818142124B7A15E857ab; // Change to Polygon when it's time
 
   // The gas lane to use, which specifies the maximum gas price to bump to.
   // For a list of available gas lanes on each network,
@@ -46,8 +46,8 @@ contract Lottery is ERC721Enumerable, Ownable, VRFConsumerBaseV2 {
   string winnerUri;
   string public baseExtension = ".json";
   uint256 public cost = 0.02 ether;
-  uint256 public maxSupply = 5;
-  uint256 public maxMintAmount = 3;
+  uint256 public maxSupply = 20;
+  uint256 public maxMintAmount = 20;
   bool public paused = false;
   address payable[] public players;
   uint256[] public nfts;
