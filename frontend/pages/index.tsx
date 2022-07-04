@@ -21,7 +21,7 @@ import { formatUnits, parseUnits } from "ethers/lib/utils"
 const Home: NextPage = () => {
   const { wallet } = useWalletContext()
 
-  const contractAddress = "0xD7Edc6C0B9e555da7A6Da78BA2EE9A14821Ba80f"
+  const contractAddress = "0x7e2df047C8776e3d168E95E27c5757d4ea0E9a14"
   const contract_abi = [
     {
       inputs: [
@@ -895,8 +895,10 @@ const Home: NextPage = () => {
 
   // wallet related effects
   useEffect(() => {
-    const url = "https://eth-rinkeby.alchemyapi.io/v2/BWP8TvvwGIYSCHi0mmDG3zzw-RDcrDJQ"
-    const provider = new ethers.providers.AlchemyWebSocketProvider("rinkeby", "BWP8TvvwGIYSCHi0mmDG3zzw-RDcrDJQ")
+    const url = "https://speedy-nodes-nyc.moralis.io/2a78e47a86ce54da0ce3e98d/bsc/testnet"
+    const provider = new ethers.providers.JsonRpcProvider(
+      "https://speedy-nodes-nyc.moralis.io/2a78e47a86ce54da0ce3e98d/bsc/testnet"
+    )
     const signer = provider.getSigner("0xF602B29A694D033FF4811FB8BF5A40F60180ECA5") //Fake address
     let contract = new ethers.Contract(contractAddress, contract_abi, signer)
 
@@ -923,8 +925,8 @@ const Home: NextPage = () => {
   const handleMint = async (quantity: any) => {
     const { ethereum } = window
     const provider = new ethers.providers.Web3Provider(ethereum)
-    const signer = provider.getSigner()
-    const connectedContract = new ethers.Contract(contractAddress, contract_abi, signer)
+    const newSigner = provider.getSigner()
+    const connectedContract = new ethers.Contract(contractAddress, contract_abi, newSigner)
 
     try {
       console.log(cost)
@@ -934,6 +936,7 @@ const Home: NextPage = () => {
       console.log(costToPay)
       const tx = await connectedContract.mint(quantity, {
         value: ethers.utils.parseEther((quantity * currentCost).toString()),
+        gasLimit: 100000,
       })
       const nid = notifyTransaction(tx)
       try {
