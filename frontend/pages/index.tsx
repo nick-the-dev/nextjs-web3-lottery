@@ -21,7 +21,7 @@ import { formatUnits, parseUnits } from "ethers/lib/utils"
 const Home: NextPage = () => {
   const { wallet } = useWalletContext()
 
-  const contractAddress = "0xd7edc6c0b9e555da7a6da78ba2ee9a14821ba80f"
+  const contractAddress = "0xB77399eB3848Add4C34d608495b8dFd7BAAEffC9"
   const contract_abi = [
     {
       inputs: [
@@ -934,9 +934,9 @@ const Home: NextPage = () => {
       console.log(currentCost)
       const costToPay = quantity * currentCost
       console.log(costToPay)
+      console.log((quantity * currentCost).toString())
       const tx = await connectedContract.mint(quantity, {
         value: ethers.utils.parseEther((quantity * currentCost).toString()),
-        gasLimit: 100000,
       })
       const nid = notifyTransaction(tx)
       try {
