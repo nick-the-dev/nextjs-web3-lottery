@@ -895,9 +895,9 @@ const Home: NextPage = () => {
 
   // wallet related effects
   useEffect(() => {
-    const url = "https://speedy-nodes-nyc.moralis.io/2a78e47a86ce54da0ce3e98d/eth/rinkeby"
+    const url = "https://eth-rinkeby.alchemyapi.io/v2/BWP8TvvwGIYSCHi0mmDG3zzw-RDcrDJQ"
     const provider = new ethers.providers.JsonRpcProvider(
-      "https://speedy-nodes-nyc.moralis.io/2a78e47a86ce54da0ce3e98d/eth/rinkeby"
+      "https://eth-rinkeby.alchemyapi.io/v2/BWP8TvvwGIYSCHi0mmDG3zzw-RDcrDJQ"
     )
     const signer = provider.getSigner("0xF602B29A694D033FF4811FB8BF5A40F60180ECA5") //Fake address
     let contract = new ethers.Contract(contractAddress, contract_abi, signer)
