@@ -21,7 +21,7 @@ import { formatUnits, parseUnits } from "ethers/lib/utils"
 const Home: NextPage = () => {
   const { wallet } = useWalletContext()
 
-  const contractAddress = "0x043e082CAA288DBC6B91A3adE3d23daD2696d2E9"
+  const contractAddress = "0x70770295c2db1A8Fa074f665627C3e0542B1a31D"
   const contract_abi = [
     {
       inputs: [
