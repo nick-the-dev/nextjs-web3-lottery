@@ -6,7 +6,7 @@ interface Quantity {
 }
 
 const Quantity: FC<Quantity> = (props) => {
-  const INITIAL_COST = 0.02
+  const INITIAL_COST = 2
   console.log(props)
 
   const increase = () => {
@@ -39,7 +39,7 @@ const Quantity: FC<Quantity> = (props) => {
           </svg>
         </button>
       </div>
-      <div className="cost">{props.quantity * INITIAL_COST} ETH</div>
+      <div className="cost">{props.quantity * INITIAL_COST} MATIC</div>
     </div>
   )
 }

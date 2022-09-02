@@ -18,7 +18,7 @@ const Hero: FC<HeroProps> = (props: any) => {
           <div className="title-wrapper">
             <h1 className="title">NFT Lottery</h1>
           </div>
-          <h2 className="subtitle">{"Limited offer: don't miss the opportunity to easily win 1 ETH (~2000$)"}</h2>{" "}
+          <h2 className="subtitle">{"Limited offer: don't miss the opportunity to easily win 100 MATIC (~100$)"}</h2>{" "}
           {/* Maybe pull here updated price of 1ETH */}
           <MintProgressBar maxSupply={props.maxSupply} totalSupply={props.totalSupply} />
           {console.log(props)}
