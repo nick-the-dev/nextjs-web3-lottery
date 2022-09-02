@@ -16,12 +16,12 @@ contract Lottery is ERC721Enumerable, Ownable, VRFConsumerBaseV2 {
 
   // Rinkeby coordinator. For other networks,
   // see https://docs.chain.link/docs/vrf-contracts/#configurations
-  address vrfCoordinator = 0x7a1BaC17Ccc5b313516C5E16fb24f7659aA5ebed; // Mumbai (Polygon Testnet)
+  address vrfCoordinator = 0xAE975071Be8F8eE67addBC1A82488F1C24858067; // Polygon (Matic) mainnet
 
   // The gas lane to use, which specifies the maximum gas price to bump to.
   // For a list of available gas lanes on each network,
   // see https://docs.chain.link/docs/vrf-contracts/#configurations
-  bytes32 keyHash = 0x4b09e658ed251bcafeebbc69400383d49f344ace09b9576fe248bb02c003fe9f; // Mumbai (Polygon Testnet) 500 gwei Key Hash
+  bytes32 keyHash = 0xcc294a196eeeb44da2888d17c0625cc88d70d9760a69d58d853ba6581a9ab0cd; // Polygon (Matic) mainnet 500 gwei Key Hash
 
   // Depends on the number of requested values that you want sent to the
   // fulfillRandomWords() function. Storing each word costs about 20,000 gas,
@@ -45,7 +45,7 @@ contract Lottery is ERC721Enumerable, Ownable, VRFConsumerBaseV2 {
   string baseURI;
   string winnerUri;
   string public baseExtension = ".json";
-  uint256 public cost = 0.0002 ether;
+  uint256 public cost = 2 ether;
   uint256 public maxSupply = 100;
   uint256 public maxMintAmount = 50;
   bool public paused = false;
