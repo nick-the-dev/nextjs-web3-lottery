@@ -1,6 +1,7 @@
 import { Button } from "@mantine/core"
 import { FC } from "react"
 import { useWalletContext } from "../../context/wallet.context"
+import { truncateAddress } from "../../utils/utility"
 
 const WalletConnectionButton: FC = () => {
   const { disconnectWallet, connectWallet, wallet } = useWalletContext()
@@ -10,18 +11,18 @@ const WalletConnectionButton: FC = () => {
       onClick={() => (wallet ? disconnectWallet() : connectWallet())}
       styles={(theme) => ({
         root: {
-          backgroundColor: '#5273c8',
-          border: '4px solid #fff',
+          backgroundColor: "#5273c8",
+          border: "4px solid #fff",
           height: 50,
           padding: 7,
           borderRadius: 24,
           fontSize: 20,
           width: 166,
-          boxShadow: '0px 4px 9px 0px rgba(69, 67, 214, 0.28)',
-          transition: '0.3s',
+          boxShadow: "0px 4px 9px 0px rgba(69, 67, 214, 0.28)",
+          transition: "0.3s",
 
-          '&:hover': {
-            backgroundColor: '#4543d6',
+          "&:hover": {
+            backgroundColor: "#4543d6",
           },
         },
 
@@ -30,7 +31,7 @@ const WalletConnectionButton: FC = () => {
         },
       })}
     >
-      {wallet ? "Disconnect" : "Wallet"}
+      {wallet ? `${truncateAddress(wallet.address)}` : "Wallet"}
     </Button>
   )
 }

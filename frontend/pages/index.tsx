@@ -17,11 +17,12 @@ import { notify, notifyError, notifyTransaction, notifyTransactionUpdate } from 
 import { truncateAddress } from "../utils/utility"
 import { BigNumber, ethers, EventFilter } from "ethers"
 import { formatUnits, parseUnits } from "ethers/lib/utils"
+import Particle from "../components/particle"
 
 const Home: NextPage = () => {
   const { wallet } = useWalletContext()
 
-  const contractAddress = "0x16DE09F47f8806CAc71cE52c0f7843115a4a1cad"
+  const contractAddress = "0x2044BD12c5B1C828cC3E315d373542ec6800a891"
   const contract_abi = [
     {
       inputs: [
@@ -955,6 +956,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <>
+        <Particle />
         <Hero maxSupply={maxSupply} totalSupply={totalSupply} handleMint={handleMint} />
         <Info />
         <BuyATicket />
